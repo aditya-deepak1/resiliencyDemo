@@ -1,0 +1,12 @@
+ci/cd:
+  - .github/workflows/*
+
+documentation:
+  - README.md
+  - ./*.md
+
+config:
+  - config/**
+
+package:
+  - internal/pkg/**
