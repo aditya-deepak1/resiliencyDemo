@@ -5,7 +5,7 @@ import (
 )
 
 func ConfigureHystrix() {
-	
+
 	// Configure test command.
 	// Default rolling window is 10s.
 	hgo.ConfigureCommand(TestCommand, hgo.CommandConfig{
@@ -15,4 +15,5 @@ func ConfigureHystrix() {
 		SleepWindow:            15000, // SleepWindowMs
 		ErrorPercentThreshold:  20,
 	})
+
 }
